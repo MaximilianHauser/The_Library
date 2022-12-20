@@ -15,10 +15,10 @@ class Stack:
         return self.items == []
     
     def push(self, item):
-        self.items.insert(0, item)
+        self.items.extend([item])
         
     def pop(self):
-        return self.items.pop(0)
+        return self.items.pop()
     
     def print_stack(self):
         print(self.items)
